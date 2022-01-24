@@ -1,0 +1,26 @@
+# Try to find the @LIB_NAME@ librairies
+#  @PKG_NAME@_FOUND - system has @LIB_NAME@ lib
+#  @PKG_NAME@_INCLUDE_DIR - the @PROJECT_NAME@ include directory
+#  @PKG_NAME@_LIBRARIES - Libraries needed to use @LIB_NAME@
+
+IF(@PKG_NAME@_INCLUDE_DIR AND @PKG_NAME@_LIBRARIES)
+  # Already in cache, be silent
+  set(@PKG_NAME@_FIND_QUIETLY TRUE)
+ENDIF(@PKG_NAME@_INCLUDE_DIR AND @PKG_NAME@_LIBRARIES)
+
+find_path(@PKG_NAME@_INCLUDE_DIR 
+	  NAMES @PROJECT_NAME@/@PROJECT_NAME@-config.hpp
+	  PATHS @PROJECT_SOURCE_DIR@/include/ )
+
+find_library(@PKG_NAME@_LIBRARIES 
+             NAMES @LIB_NAME@
+             PATHS @CMAKE_BINARY_DIR@/lib)
+
+IF(AXL)
+  set( @PKG_NAME@_INCLUDE_DIR ${@PKG_NAME@_INCLUDE_DIR} ${@PKG_NAME@_INCLUDE_DIR}/../axl)
+ENDIF(AXL)
+
+include(FindPackageHandleStandardArgs)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(@PKG_NAME@ DEFAULT_MSG @PKG_NAME@_INCLUDE_DIR @PKG_NAME@_LIBRARIES)
+
+mark_as_advanced(@PKG_NAME@_INCLUDE_DIR @PKG_NAME@_LIBRARIES)

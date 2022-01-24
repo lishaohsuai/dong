@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/isogeometry/!svn/ver/190/toolbox/sisl/include/sisl
+END
+sislP.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/isogeometry/!svn/ver/107/toolbox/sisl/include/sisl/sislP.h
+END
+GoReadWrite.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/isogeometry/!svn/ver/107/toolbox/sisl/include/sisl/GoReadWrite.h
+END
+sisl-config.hpp.in
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/isogeometry/!svn/ver/190/toolbox/sisl/include/sisl/sisl-config.hpp.in
+END

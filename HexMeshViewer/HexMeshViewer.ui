@@ -1,0 +1,1454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HexMeshViewerClass</class>
+ <widget class="QMainWindow" name="HexMeshViewerClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1076</width>
+    <height>855</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HexMeshViewer</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QWidget" name="widget_2" native="true">
+      <layout class="QGridLayout" name="gridLayout_2" columnstretch="2,5">
+       <item row="0" column="0">
+        <widget class="CuttingWidget" name="widget_3" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout"/>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QGLViewerWidget" name="widget" native="true"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1076</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionSaveDAT"/>
+    <addaction name="separator"/>
+    <addaction name="actionSaveAXL"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpenOBJ"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpenVTK_Tri"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpenVtk_smooth"/>
+    <addaction name="separator"/>
+    <addaction name="actionClear_edge"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_HexMesh"/>
+    <addaction name="separator"/>
+    <addaction name="actionTransformation"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpenBezier"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpenBezier1"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpenBezier2"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpenBezierNew"/>
+    <addaction name="separator"/>
+    <addaction name="actionReadXJ"/>
+    <addaction name="separator"/>
+    <addaction name="actionALL_LINES1"/>
+   </widget>
+   <widget class="QMenu" name="menuFunction">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionWIRE_FRAME"/>
+    <addaction name="separator"/>
+    <addaction name="actionFLAT_LINES"/>
+    <addaction name="separator"/>
+    <addaction name="actionSOLID_FLAT"/>
+    <addaction name="separator"/>
+    <addaction name="actionALL_LINES"/>
+    <addaction name="separator"/>
+    <addaction name="actionALL_POINTS"/>
+    <addaction name="separator"/>
+    <addaction name="actionALL_POLY"/>
+    <addaction name="separator"/>
+    <addaction name="actionVOLUME_TEXTURE"/>
+    <addaction name="separator"/>
+    <addaction name="actionDAT1"/>
+    <addaction name="separator"/>
+    <addaction name="actionDAT2"/>
+    <addaction name="separator"/>
+    <addaction name="actionDAT3"/>
+    <addaction name="separator"/>
+    <addaction name="actionDAT4_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionDAT5"/>
+    <addaction name="separator"/>
+    <addaction name="actionDAT5_1"/>
+    <addaction name="separator"/>
+    <addaction name="actionIsoline"/>
+    <addaction name="separator"/>
+    <addaction name="actionIsoline1"/>
+    <addaction name="separator"/>
+    <addaction name="actionIsoline2"/>
+    <addaction name="separator"/>
+    <addaction name="actionDatPoint"/>
+    <addaction name="separator"/>
+    <addaction name="actionDatPoint2"/>
+    <addaction name="separator"/>
+    <addaction name="actionError"/>
+    <addaction name="separator"/>
+    <addaction name="actionError1"/>
+    <addaction name="separator"/>
+    <addaction name="actionSOLIDFLAT_FRAME"/>
+    <addaction name="actionDATonly"/>
+   </widget>
+   <widget class="QMenu" name="menuFunction_2">
+    <property name="title">
+     <string>Function</string>
+    </property>
+    <addaction name="actionClear_ALL"/>
+    <addaction name="separator"/>
+    <addaction name="actionSubdvision"/>
+    <addaction name="separator"/>
+    <addaction name="actionSubdvision2"/>
+    <addaction name="separator"/>
+    <addaction name="actionSubdvision3"/>
+    <addaction name="separator"/>
+    <addaction name="actionSubdvision4"/>
+    <addaction name="separator"/>
+    <addaction name="actionSubdvision5"/>
+    <addaction name="separator"/>
+    <addaction name="actionSubdvision6"/>
+    <addaction name="separator"/>
+    <addaction name="actionSubdvision7"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_Mesh"/>
+    <addaction name="separator"/>
+    <addaction name="actionApproximationCC"/>
+    <addaction name="separator"/>
+    <addaction name="actionConstructBezier"/>
+    <addaction name="separator"/>
+    <addaction name="actionAppCCSolid"/>
+    <addaction name="separator"/>
+    <addaction name="actionConstructBS"/>
+    <addaction name="separator"/>
+    <addaction name="actionAppCCSolidDAT"/>
+    <addaction name="separator"/>
+    <addaction name="actionConstructBSDAT"/>
+    <addaction name="separator"/>
+    <addaction name="actionCompare"/>
+    <addaction name="separator"/>
+    <addaction name="actionAppCCSolidNoS"/>
+    <addaction name="separator"/>
+    <addaction name="actionConstructBSNoS"/>
+    <addaction name="separator"/>
+    <addaction name="actionAppCCsolidNSDAT"/>
+    <addaction name="separator"/>
+    <addaction name="actionConsturctBSNCDAT"/>
+    <addaction name="separator"/>
+    <addaction name="actionCCSub_1"/>
+    <addaction name="separator"/>
+    <addaction name="actionAppCCSolidDAT_1"/>
+   </widget>
+   <widget class="QMenu" name="menuOther">
+    <property name="title">
+     <string>Other</string>
+    </property>
+    <addaction name="actionSplit"/>
+    <addaction name="separator"/>
+    <addaction name="actionSplit1"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_Oriv"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_BB"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_OriBB"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_OvandV"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_SE_and_SV"/>
+    <addaction name="separator"/>
+    <addaction name="actionShi_xiong"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_BeiV"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_Beiframe"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_Beiflatline"/>
+    <addaction name="separator"/>
+    <addaction name="actionInterior_Point"/>
+    <addaction name="separator"/>
+    <addaction name="actionEdge_Point"/>
+    <addaction name="separator"/>
+    <addaction name="actionCorner_Point"/>
+    <addaction name="separator"/>
+    <addaction name="actionPICKFACE"/>
+   </widget>
+   <widget class="QMenu" name="menuMore">
+    <property name="title">
+     <string>More</string>
+    </property>
+    <addaction name="actionAdd_CC"/>
+    <addaction name="separator"/>
+    <addaction name="actionMesh"/>
+    <addaction name="separator"/>
+    <addaction name="actionMesh1"/>
+    <addaction name="separator"/>
+    <addaction name="actionSort_Two_Mesh"/>
+    <addaction name="separator"/>
+    <addaction name="actionCombine"/>
+    <addaction name="separator"/>
+    <addaction name="actionView_singular"/>
+    <addaction name="separator"/>
+    <addaction name="actionSelect_one_point"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete_Cell"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete_Cell1"/>
+    <addaction name="separator"/>
+    <addaction name="actionCCSub_New"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_two_mesh"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_two_mesh_singular"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu2n_Point">
+    <property name="title">
+     <string>2n-Point</string>
+    </property>
+    <addaction name="actionInitialModel"/>
+    <addaction name="separator"/>
+    <addaction name="action4_Point"/>
+    <addaction name="separator"/>
+    <addaction name="action6_Point"/>
+    <addaction name="separator"/>
+    <addaction name="action2n_Point_Line"/>
+    <addaction name="separator"/>
+    <addaction name="action2n_Point"/>
+    <addaction name="separator"/>
+    <addaction name="actionActionCalPDE1"/>
+   </widget>
+   <widget class="QMenu" name="menuPDE">
+    <property name="title">
+     <string>PDE</string>
+    </property>
+    <addaction name="actionConstructModel"/>
+    <addaction name="separator"/>
+    <addaction name="actionCalPDE"/>
+    <addaction name="separator"/>
+    <addaction name="actionConstructModel_1"/>
+    <addaction name="separator"/>
+    <addaction name="actionBSplineSolidDAT"/>
+    <addaction name="separator"/>
+    <addaction name="actionExactSol"/>
+    <addaction name="separator"/>
+    <addaction name="actionERRORV"/>
+    <addaction name="separator"/>
+    <addaction name="actionTESTDraw"/>
+    <addaction name="separator"/>
+    <addaction name="actionSIMP"/>
+    <addaction name="separator"/>
+    <addaction name="actionSIMP1"/>
+    <addaction name="separator"/>
+    <addaction name="actionNewSIMP"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete"/>
+    <addaction name="separator"/>
+    <addaction name="actionConstructModel_1_new"/>
+    <addaction name="separator"/>
+    <addaction name="actionSIMP_new"/>
+    <addaction name="separator"/>
+    <addaction name="actionConstructModel_new"/>
+    <addaction name="separator"/>
+    <addaction name="actionNewSIMP_new"/>
+    <addaction name="separator"/>
+    <addaction name="actionPick_Point"/>
+    <addaction name="separator"/>
+    <addaction name="actionOutput_PickPoint"/>
+    <addaction name="separator"/>
+    <addaction name="actionRead_PickPoint"/>
+    <addaction name="separator"/>
+    <addaction name="actionPick_Edge"/>
+    <addaction name="separator"/>
+    <addaction name="actionPDESparse"/>
+    <addaction name="separator"/>
+    <addaction name="actionPDESparseOld"/>
+    <addaction name="actionPDESparseSIMP"/>
+   </widget>
+   <widget class="QMenu" name="menuPDE_Extra">
+    <property name="title">
+     <string>PDE_Extra</string>
+    </property>
+    <addaction name="actionPDESpareLiner"/>
+    <addaction name="separator"/>
+    <addaction name="actionPDESpareLiner_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionPDELinerShow"/>
+    <addaction name="separator"/>
+    <addaction name="actionPDESquareLiner_Muti"/>
+    <addaction name="separator"/>
+    <addaction name="actionOutput_PickedEdge"/>
+    <addaction name="separator"/>
+    <addaction name="actionRead_PickedEdge"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen_Model"/>
+    <addaction name="separator"/>
+    <addaction name="actionPick_Face"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete_Face"/>
+    <addaction name="separator"/>
+    <addaction name="actionOutput_PickedFace"/>
+    <addaction name="separator"/>
+    <addaction name="actionRead_PickedFace"/>
+    <addaction name="separator"/>
+    <addaction name="actionPick_Cell"/>
+    <addaction name="separator"/>
+    <addaction name="actionOutput_PickedAll"/>
+    <addaction name="separator"/>
+    <addaction name="actionRead_PickedAll"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete_Cell_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionSmooth"/>
+    <addaction name="separator"/>
+    <addaction name="actionPick_curve"/>
+    <addaction name="separator"/>
+    <addaction name="actionOutput_curve"/>
+    <addaction name="separator"/>
+    <addaction name="actionRead_curve"/>
+    <addaction name="separator"/>
+    <addaction name="actionBezierBDY"/>
+    <addaction name="separator"/>
+    <addaction name="actionBezierSharp"/>
+    <addaction name="actionCheckbei"/>
+   </widget>
+   <widget class="QMenu" name="menuExtra">
+    <property name="title">
+     <string>Extra</string>
+    </property>
+    <addaction name="actionBeibdyDAT"/>
+    <addaction name="separator"/>
+    <addaction name="actionBeibdyDAT1"/>
+    <addaction name="separator"/>
+    <addaction name="actionCheckCell"/>
+    <addaction name="separator"/>
+    <addaction name="actionPreparePDE"/>
+    <addaction name="separator"/>
+    <addaction name="actionDrawBeisur"/>
+    <addaction name="separator"/>
+    <addaction name="actionDeleteBeisur"/>
+    <addaction name="separator"/>
+    <addaction name="actionOutputDraw"/>
+    <addaction name="separator"/>
+    <addaction name="actionReadDraw"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpDraw"/>
+    <addaction name="separator"/>
+    <addaction name="actionSingularFace"/>
+    <addaction name="separator"/>
+    <addaction name="actionDrawFrame"/>
+    <addaction name="separator"/>
+    <addaction name="actionDrameFrame1"/>
+    <addaction name="separator"/>
+    <addaction name="actionFrame"/>
+    <addaction name="separator"/>
+    <addaction name="actionOutput_MAXMIN"/>
+    <addaction name="separator"/>
+    <addaction name="actionSphereDraw"/>
+    <addaction name="separator"/>
+    <addaction name="actionErrorAndFrame"/>
+    <addaction name="separator"/>
+    <addaction name="actionFrame_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionGrab"/>
+    <addaction name="separator"/>
+    <addaction name="actionTisu"/>
+    <addaction name="separator"/>
+    <addaction name="actionFrameTisu"/>
+    <addaction name="separator"/>
+    <addaction name="actionOutputCSV"/>
+    <addaction name="actionReadCSV"/>
+   </widget>
+   <widget class="QMenu" name="menuLine">
+    <property name="title">
+     <string>Quad</string>
+    </property>
+    <addaction name="actionReadLine"/>
+    <addaction name="separator"/>
+    <addaction name="actionOutputline"/>
+    <addaction name="separator"/>
+    <addaction name="actionBezierLine"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuadCC_Crease"/>
+    <addaction name="separator"/>
+    <addaction name="actionShowQuad"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuadV"/>
+    <addaction name="separator"/>
+    <addaction name="actionSetQuad1"/>
+    <addaction name="separator"/>
+    <addaction name="actionShowTwoQuad"/>
+    <addaction name="separator"/>
+    <addaction name="actionPick_Point_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionSetFrame"/>
+    <addaction name="separator"/>
+    <addaction name="actionShowFrame"/>
+    <addaction name="separator"/>
+    <addaction name="actionBezierSharp1"/>
+    <addaction name="separator"/>
+    <addaction name="actionDraw_BSvector"/>
+    <addaction name="separator"/>
+    <addaction name="actionDraw_framevector"/>
+    <addaction name="separator"/>
+    <addaction name="actionRead_PickedEdge1"/>
+   </widget>
+   <widget class="QMenu" name="menuMove">
+    <property name="title">
+     <string>Move</string>
+    </property>
+    <addaction name="actionX"/>
+    <addaction name="separator"/>
+    <addaction name="actionX_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionZ"/>
+    <addaction name="separator"/>
+    <addaction name="actionZ_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionAngle"/>
+    <addaction name="separator"/>
+    <addaction name="actionAngle_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionScale"/>
+    <addaction name="separator"/>
+    <addaction name="actionScale_2"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuFunction"/>
+   <addaction name="menuFunction_2"/>
+   <addaction name="menuOther"/>
+   <addaction name="menuMore"/>
+   <addaction name="menu2n_Point"/>
+   <addaction name="menuPDE"/>
+   <addaction name="menuPDE_Extra"/>
+   <addaction name="menuExtra"/>
+   <addaction name="menuLine"/>
+   <addaction name="menuMove"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionWIRE_FRAME">
+   <property name="text">
+    <string>WIRE_FRAME</string>
+   </property>
+  </action>
+  <action name="actionFLAT_LINES">
+   <property name="text">
+    <string>FLAT_LINES</string>
+   </property>
+  </action>
+  <action name="actionSOLID_FLAT">
+   <property name="text">
+    <string>SOLID_FLAT</string>
+   </property>
+  </action>
+  <action name="actionALL_LINES">
+   <property name="text">
+    <string>ALL_LINES</string>
+   </property>
+  </action>
+  <action name="actionALL_POLY">
+   <property name="text">
+    <string>ALL_POLY</string>
+   </property>
+  </action>
+  <action name="actionSubdvision">
+   <property name="text">
+    <string>Subdvision1</string>
+   </property>
+  </action>
+  <action name="actionALL_POINTS">
+   <property name="text">
+    <string>ALL_POINTS</string>
+   </property>
+  </action>
+  <action name="actionClear_ALL">
+   <property name="text">
+    <string>Clear All</string>
+   </property>
+  </action>
+  <action name="actionSubdvision2">
+   <property name="text">
+    <string>Subdvision2</string>
+   </property>
+  </action>
+  <action name="actionAdd_Mesh">
+   <property name="text">
+    <string>Add Mesh</string>
+   </property>
+  </action>
+  <action name="actionSubdvision3">
+   <property name="text">
+    <string>Subdvision3</string>
+   </property>
+  </action>
+  <action name="actionSubdvision4">
+   <property name="text">
+    <string>Subdvision4</string>
+   </property>
+  </action>
+  <action name="actionVOLUME_TEXTURE">
+   <property name="text">
+    <string>VOLUME_TEXTURE</string>
+   </property>
+  </action>
+  <action name="actionSubdvision5">
+   <property name="text">
+    <string>Subdvision5</string>
+   </property>
+  </action>
+  <action name="actionSubdvision6">
+   <property name="text">
+    <string>Subdvision6</string>
+   </property>
+  </action>
+  <action name="actionSplit">
+   <property name="text">
+    <string>Split</string>
+   </property>
+  </action>
+  <action name="actionShow_Oriv">
+   <property name="text">
+    <string>Show Oriv</string>
+   </property>
+  </action>
+  <action name="actionShow_BB">
+   <property name="text">
+    <string>Show BB</string>
+   </property>
+  </action>
+  <action name="actionShow_OriBB">
+   <property name="text">
+    <string>Show OriBB</string>
+   </property>
+  </action>
+  <action name="actionShow_OvandV">
+   <property name="text">
+    <string>Show OvandV</string>
+   </property>
+  </action>
+  <action name="actionSubdvision7">
+   <property name="text">
+    <string>Subdvision7</string>
+   </property>
+  </action>
+  <action name="actionShow_SE_and_SV">
+   <property name="text">
+    <string>Show SE and SV</string>
+   </property>
+  </action>
+  <action name="actionShi_xiong">
+   <property name="text">
+    <string>Show Singular</string>
+   </property>
+  </action>
+  <action name="actionOpenVTK">
+   <property name="text">
+    <string>OpenVTK</string>
+   </property>
+  </action>
+  <action name="actionApproximationCC">
+   <property name="text">
+    <string>ApproximateCC</string>
+   </property>
+  </action>
+  <action name="actionShow_BeiV">
+   <property name="text">
+    <string>Show BeiV</string>
+   </property>
+  </action>
+  <action name="actionShow_Beiframe">
+   <property name="text">
+    <string>Show Beiframe</string>
+   </property>
+  </action>
+  <action name="actionShow_Beiflatline">
+   <property name="text">
+    <string>Show Beiflatline</string>
+   </property>
+  </action>
+  <action name="actionConstructBezier">
+   <property name="text">
+    <string>ConstructBezier</string>
+   </property>
+  </action>
+  <action name="actionAppCCSolid">
+   <property name="text">
+    <string>AppCCSolid</string>
+   </property>
+  </action>
+  <action name="actionConstructBS">
+   <property name="text">
+    <string>ConstructBS</string>
+   </property>
+  </action>
+  <action name="actionSaveDAT">
+   <property name="text">
+    <string>SaveDAT</string>
+   </property>
+  </action>
+  <action name="actionAppCCSolidDAT">
+   <property name="text">
+    <string>AppCCSolidDAT</string>
+   </property>
+  </action>
+  <action name="actionConstructBSDAT">
+   <property name="text">
+    <string>ConstructBSDAT</string>
+   </property>
+  </action>
+  <action name="actionCompare">
+   <property name="text">
+    <string>Compare</string>
+   </property>
+  </action>
+  <action name="actionAppCCSolidNoS">
+   <property name="text">
+    <string>AppCCSolidNoS</string>
+   </property>
+  </action>
+  <action name="actionConstructBSNoS">
+   <property name="text">
+    <string>ConstructBSNoS</string>
+   </property>
+  </action>
+  <action name="actionDAT1">
+   <property name="text">
+    <string>DAT1</string>
+   </property>
+  </action>
+  <action name="actionDAT2">
+   <property name="text">
+    <string>DAT2</string>
+   </property>
+  </action>
+  <action name="actionDAT3">
+   <property name="text">
+    <string>DAT3</string>
+   </property>
+  </action>
+  <action name="actionDAT1_2">
+   <property name="text">
+    <string>DAT1</string>
+   </property>
+  </action>
+  <action name="actionDAT2_2">
+   <property name="text">
+    <string>DAT2</string>
+   </property>
+  </action>
+  <action name="actionDAT3_2">
+   <property name="text">
+    <string>DAT3</string>
+   </property>
+  </action>
+  <action name="actionDAT4">
+   <property name="text">
+    <string>DAT4</string>
+   </property>
+  </action>
+  <action name="actionDAT4_2">
+   <property name="text">
+    <string>DAT4</string>
+   </property>
+  </action>
+  <action name="actionAppCCsolidNSDAT">
+   <property name="text">
+    <string>AppCCsolidNSDAT</string>
+   </property>
+  </action>
+  <action name="actionConsturctBSNCDAT">
+   <property name="text">
+    <string>ConsturctBSNCDAT</string>
+   </property>
+  </action>
+  <action name="actionDAT5">
+   <property name="text">
+    <string>DAT5</string>
+   </property>
+  </action>
+  <action name="actionIsoline">
+   <property name="text">
+    <string>Isoline</string>
+   </property>
+  </action>
+  <action name="actionDatPoint">
+   <property name="text">
+    <string>DatPoint1</string>
+   </property>
+  </action>
+  <action name="actionDatPoint2">
+   <property name="text">
+    <string>DatPoint2</string>
+   </property>
+  </action>
+  <action name="actionInterior_Point">
+   <property name="text">
+    <string>Interior Point</string>
+   </property>
+  </action>
+  <action name="actionEdge_Point">
+   <property name="text">
+    <string>Edge Point</string>
+   </property>
+  </action>
+  <action name="actionCorner_Point">
+   <property name="text">
+    <string>Corner Point</string>
+   </property>
+  </action>
+  <action name="actionDAT5_1">
+   <property name="text">
+    <string>DAT5_1</string>
+   </property>
+  </action>
+  <action name="actionError">
+   <property name="text">
+    <string>Error</string>
+   </property>
+  </action>
+  <action name="actionAdd_CC">
+   <property name="text">
+    <string>Add CC</string>
+   </property>
+  </action>
+  <action name="actionMesh">
+   <property name="text">
+    <string>Mesh</string>
+   </property>
+  </action>
+  <action name="actionMesh1">
+   <property name="text">
+    <string>Mesh1</string>
+   </property>
+  </action>
+  <action name="actionSort_Two_Mesh">
+   <property name="text">
+    <string>Sort Two Mesh</string>
+   </property>
+  </action>
+  <action name="actionError1">
+   <property name="text">
+    <string>Error1</string>
+   </property>
+  </action>
+  <action name="actionCombine">
+   <property name="text">
+    <string>Combine</string>
+   </property>
+  </action>
+  <action name="actionSingular1">
+   <property name="text">
+    <string>Singular1</string>
+   </property>
+  </action>
+  <action name="actionSingular2">
+   <property name="text">
+    <string>Singular2</string>
+   </property>
+  </action>
+  <action name="actionSingular3">
+   <property name="text">
+    <string>Singular3</string>
+   </property>
+  </action>
+  <action name="actionView_singular">
+   <property name="text">
+    <string>view_singular</string>
+   </property>
+  </action>
+  <action name="actionSelect_one_point">
+   <property name="text">
+    <string>select one point</string>
+   </property>
+  </action>
+  <action name="actionInitialModel">
+   <property name="text">
+    <string>InitialModel</string>
+   </property>
+  </action>
+  <action name="action4_Point">
+   <property name="text">
+    <string>4-Point</string>
+   </property>
+  </action>
+  <action name="action6_Point">
+   <property name="text">
+    <string>6-Point</string>
+   </property>
+  </action>
+  <action name="action2n_Point">
+   <property name="text">
+    <string>2n-Point-Face</string>
+   </property>
+  </action>
+  <action name="actionSaveAXL">
+   <property name="text">
+    <string>SaveAXL</string>
+   </property>
+  </action>
+  <action name="action2n_Point_Line">
+   <property name="text">
+    <string>2n-Point-Line</string>
+   </property>
+  </action>
+  <action name="actionDelete_Cell">
+   <property name="text">
+    <string>Delete Cell</string>
+   </property>
+  </action>
+  <action name="actionCCSub_1">
+   <property name="text">
+    <string>CCSub_1</string>
+   </property>
+  </action>
+  <action name="actionAppCCSolidDAT_1">
+   <property name="text">
+    <string>ConstructBSDAT_1</string>
+   </property>
+  </action>
+  <action name="actionConstructModel">
+   <property name="text">
+    <string>ConstructModel</string>
+   </property>
+  </action>
+  <action name="actionCalPDE">
+   <property name="text">
+    <string>CalPDE</string>
+   </property>
+  </action>
+  <action name="actionConstructModel_1">
+   <property name="text">
+    <string>ConstructModel_1</string>
+   </property>
+  </action>
+  <action name="actionBSplineSolidDAT">
+   <property name="text">
+    <string>BSplineSolid</string>
+   </property>
+  </action>
+  <action name="actionExactSol">
+   <property name="text">
+    <string>ExactSol</string>
+   </property>
+  </action>
+  <action name="actionERRORV">
+   <property name="text">
+    <string>ERRORV</string>
+   </property>
+  </action>
+  <action name="actionTESTDraw">
+   <property name="text">
+    <string>TESTDraw</string>
+   </property>
+  </action>
+  <action name="actionSIMP">
+   <property name="text">
+    <string>SIMP</string>
+   </property>
+  </action>
+  <action name="actionSIMP1">
+   <property name="text">
+    <string>SIMP1</string>
+   </property>
+  </action>
+  <action name="actionNewSIMP">
+   <property name="text">
+    <string>NewSIMP</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionSplit1">
+   <property name="text">
+    <string>Split1</string>
+   </property>
+  </action>
+  <action name="actionCCSub_New">
+   <property name="text">
+    <string>CCSub_New</string>
+   </property>
+  </action>
+  <action name="actionConstructModel_1_new">
+   <property name="text">
+    <string>ConstructModel_1_new</string>
+   </property>
+  </action>
+  <action name="actionSIMP_new">
+   <property name="text">
+    <string>SIMP_new</string>
+   </property>
+  </action>
+  <action name="actionConstructModel_new">
+   <property name="text">
+    <string>ConstructModel_new</string>
+   </property>
+  </action>
+  <action name="actionNewSIMP_new">
+   <property name="text">
+    <string>NewSIMP_new</string>
+   </property>
+  </action>
+  <action name="actionPick_Point">
+   <property name="text">
+    <string>Pick Point</string>
+   </property>
+  </action>
+  <action name="actionPick_Edge">
+   <property name="text">
+    <string>Pick Edge</string>
+   </property>
+  </action>
+  <action name="actionOutput_PickPoint">
+   <property name="text">
+    <string>Output PickPoint</string>
+   </property>
+  </action>
+  <action name="actionRead_PickPoint">
+   <property name="text">
+    <string>Read PickPoint</string>
+   </property>
+  </action>
+  <action name="actionPDESparse">
+   <property name="text">
+    <string>PDESparse</string>
+   </property>
+  </action>
+  <action name="actionPDESparseOld">
+   <property name="text">
+    <string>PDESparseOld</string>
+   </property>
+  </action>
+  <action name="actionPDESparseSIMP">
+   <property name="text">
+    <string>PDESparseSIMP</string>
+   </property>
+  </action>
+  <action name="actionPDESpareLiner">
+   <property name="text">
+    <string>PDELiner</string>
+   </property>
+  </action>
+  <action name="actionPDESpareLiner_2">
+   <property name="text">
+    <string>PDESpareLiner</string>
+   </property>
+  </action>
+  <action name="actionIsoline1">
+   <property name="text">
+    <string>Isoline1</string>
+   </property>
+  </action>
+  <action name="actionIsoline2">
+   <property name="text">
+    <string>Isoline2</string>
+   </property>
+  </action>
+  <action name="actionOutput_PickedEdge">
+   <property name="text">
+    <string>Output PickedEdge</string>
+   </property>
+  </action>
+  <action name="actionRead_PickedEdge">
+   <property name="text">
+    <string>Read PickedEdge</string>
+   </property>
+  </action>
+  <action name="actionOpen_Model">
+   <property name="text">
+    <string>Open Model</string>
+   </property>
+  </action>
+  <action name="actionPick_Face">
+   <property name="text">
+    <string>Pick Face</string>
+   </property>
+  </action>
+  <action name="actionOutput_PickedFace">
+   <property name="text">
+    <string>Output PickedFace</string>
+   </property>
+  </action>
+  <action name="actionRead_PickedFace">
+   <property name="text">
+    <string>Read PickedFace</string>
+   </property>
+  </action>
+  <action name="actionDelete_Face">
+   <property name="text">
+    <string>Delete Face</string>
+   </property>
+  </action>
+  <action name="actionPick_Cell">
+   <property name="text">
+    <string>Pick Cell</string>
+   </property>
+  </action>
+  <action name="actionOutput_PickedAll">
+   <property name="text">
+    <string>Output PickedAll</string>
+   </property>
+  </action>
+  <action name="actionRead_PickedAll">
+   <property name="text">
+    <string>Read PickedAll</string>
+   </property>
+  </action>
+  <action name="actionDelete_Cell_2">
+   <property name="text">
+    <string>Delete Cell</string>
+   </property>
+  </action>
+  <action name="actionSaveVTK">
+   <property name="text">
+    <string>SaveVTK</string>
+   </property>
+  </action>
+  <action name="actionOpenOBJ">
+   <property name="text">
+    <string>OpenOBJ</string>
+   </property>
+  </action>
+  <action name="actionBeibdyDAT">
+   <property name="text">
+    <string>BeibdyDAT</string>
+   </property>
+  </action>
+  <action name="actionCheckCell">
+   <property name="text">
+    <string>CheckCell</string>
+   </property>
+  </action>
+  <action name="actionPDELinerShow">
+   <property name="text">
+    <string>PDELinerShow</string>
+   </property>
+  </action>
+  <action name="actionPreparePDE">
+   <property name="text">
+    <string>PreparePDE</string>
+   </property>
+  </action>
+  <action name="actionDrawBeisur">
+   <property name="text">
+    <string>DrawBeisur</string>
+   </property>
+  </action>
+  <action name="actionDeleteBeisur">
+   <property name="text">
+    <string>DeleteBeisur</string>
+   </property>
+  </action>
+  <action name="actionOutputDraw">
+   <property name="text">
+    <string>OutputDraw</string>
+   </property>
+  </action>
+  <action name="actionReadDraw">
+   <property name="text">
+    <string>ReadDraw</string>
+   </property>
+  </action>
+  <action name="actionOpDraw">
+   <property name="text">
+    <string>OpDraw</string>
+   </property>
+  </action>
+  <action name="actionShow_two_mesh">
+   <property name="text">
+    <string>Show two mesh</string>
+   </property>
+  </action>
+  <action name="actionSingularFace">
+   <property name="text">
+    <string>SingularFace</string>
+   </property>
+  </action>
+  <action name="actionShow_two_mesh_singular">
+   <property name="text">
+    <string>Show two mesh singular</string>
+   </property>
+  </action>
+  <action name="actionDrawFrame">
+   <property name="text">
+    <string>DrawFrame</string>
+   </property>
+  </action>
+  <action name="actionPDESquareLiner_Muti">
+   <property name="text">
+    <string>PDESquareLiner_Muti</string>
+   </property>
+  </action>
+  <action name="actionSOLIDFLAT_FRAME">
+   <property name="text">
+    <string>SOLIDFLAT_FRAME</string>
+   </property>
+  </action>
+  <action name="actionDelete_Cell1">
+   <property name="text">
+    <string>Delete Cell1</string>
+   </property>
+  </action>
+  <action name="actionBeibdyDAT1">
+   <property name="text">
+    <string>BeibdyDAT1</string>
+   </property>
+  </action>
+  <action name="actionOpenVTK_Tri">
+   <property name="text">
+    <string>OpenVTK_Tri</string>
+   </property>
+  </action>
+  <action name="actionDrameFrame1">
+   <property name="text">
+    <string>DrawFrame1</string>
+   </property>
+  </action>
+  <action name="actionFrame">
+   <property name="text">
+    <string>Frame1</string>
+   </property>
+  </action>
+  <action name="actionOutput_MAXMIN">
+   <property name="text">
+    <string>Output_MAXMIN</string>
+   </property>
+  </action>
+  <action name="actionSphereDraw">
+   <property name="text">
+    <string>SphereDraw</string>
+   </property>
+  </action>
+  <action name="actionErrorAndFrame">
+   <property name="text">
+    <string>ErrorAndFrame</string>
+   </property>
+  </action>
+  <action name="actionFrame_2">
+   <property name="text">
+    <string>Frame</string>
+   </property>
+  </action>
+  <action name="actionGrab">
+   <property name="text">
+    <string>Grab</string>
+   </property>
+  </action>
+  <action name="actionReadLine">
+   <property name="text">
+    <string>ReadLine</string>
+   </property>
+  </action>
+  <action name="actionOutputline">
+   <property name="text">
+    <string>Outputline</string>
+   </property>
+  </action>
+  <action name="actionOpenVtk_smooth">
+   <property name="text">
+    <string>OpenVtk_smooth</string>
+   </property>
+  </action>
+  <action name="actionTisu">
+   <property name="text">
+    <string>Tisu</string>
+   </property>
+  </action>
+  <action name="actionFrameTisu">
+   <property name="text">
+    <string>FrameTisu</string>
+   </property>
+  </action>
+  <action name="actionOutputCSV">
+   <property name="text">
+    <string>OutputCSV</string>
+   </property>
+  </action>
+  <action name="actionReadCSV">
+   <property name="text">
+    <string>ReadCSV</string>
+   </property>
+  </action>
+  <action name="actionSmooth">
+   <property name="text">
+    <string>Smooth</string>
+   </property>
+  </action>
+  <action name="actionBezierLine">
+   <property name="text">
+    <string>CreateQuad</string>
+   </property>
+  </action>
+  <action name="actionQuadCC_Crease">
+   <property name="text">
+    <string>QuadCC_Crease</string>
+   </property>
+  </action>
+  <action name="actionQuadV">
+   <property name="text">
+    <string>QuadV</string>
+   </property>
+  </action>
+  <action name="actionSetQuad1">
+   <property name="text">
+    <string>SetQuad1</string>
+   </property>
+  </action>
+  <action name="actionShowTwoQuad">
+   <property name="text">
+    <string>ShowTwoQuad</string>
+   </property>
+  </action>
+  <action name="actionPick_Point_2">
+   <property name="text">
+    <string>Pick Point</string>
+   </property>
+  </action>
+  <action name="actionSetFrame">
+   <property name="text">
+    <string>SetFrame</string>
+   </property>
+  </action>
+  <action name="actionShowFrame">
+   <property name="text">
+    <string>ShowFrame</string>
+   </property>
+  </action>
+  <action name="actionShowQuad">
+   <property name="text">
+    <string>ShowQuad</string>
+   </property>
+  </action>
+  <action name="actionPick_curve">
+   <property name="text">
+    <string>Create curve</string>
+   </property>
+  </action>
+  <action name="actionOutput_curve">
+   <property name="text">
+    <string>Output curve</string>
+   </property>
+  </action>
+  <action name="actionRead_curve">
+   <property name="text">
+    <string>Read curve</string>
+   </property>
+  </action>
+  <action name="actionBezierBDY">
+   <property name="text">
+    <string>BezierBDY</string>
+   </property>
+  </action>
+  <action name="actionBezierSharp">
+   <property name="text">
+    <string>BezierSharp</string>
+   </property>
+  </action>
+  <action name="actionCheckbei">
+   <property name="text">
+    <string>checkbei</string>
+   </property>
+  </action>
+  <action name="actionClear_edge">
+   <property name="text">
+    <string>Clear edge</string>
+   </property>
+  </action>
+  <action name="actionDATonly">
+   <property name="text">
+    <string>DATonly</string>
+   </property>
+  </action>
+  <action name="actionAdd_HexMesh">
+   <property name="text">
+    <string>Add HexMesh</string>
+   </property>
+  </action>
+  <action name="actionBezierSharp1">
+   <property name="text">
+    <string>BezierSharp1</string>
+   </property>
+  </action>
+  <action name="actionDraw_BSvector">
+   <property name="text">
+    <string>Draw_BSvector</string>
+   </property>
+  </action>
+  <action name="actionTransformation">
+   <property name="text">
+    <string>Transformation</string>
+   </property>
+  </action>
+  <action name="actionX">
+   <property name="text">
+    <string>x++</string>
+   </property>
+  </action>
+  <action name="actionX_2">
+   <property name="text">
+    <string>x--</string>
+   </property>
+  </action>
+  <action name="actionZ">
+   <property name="text">
+    <string>z++</string>
+   </property>
+  </action>
+  <action name="actionZ_2">
+   <property name="text">
+    <string>z--</string>
+   </property>
+  </action>
+  <action name="actionAngle">
+   <property name="text">
+    <string>angle++</string>
+   </property>
+  </action>
+  <action name="actionAngle_2">
+   <property name="text">
+    <string>angle--</string>
+   </property>
+  </action>
+  <action name="actionScale">
+   <property name="text">
+    <string>scale++</string>
+   </property>
+  </action>
+  <action name="actionScale_2">
+   <property name="text">
+    <string>scale--</string>
+   </property>
+  </action>
+  <action name="actionDraw_framevector">
+   <property name="text">
+    <string>Draw_framevector</string>
+   </property>
+  </action>
+  <action name="actionRead_PickedEdge1">
+   <property name="text">
+    <string>Read PickedEdge1</string>
+   </property>
+  </action>
+  <action name="actionOpenBezier">
+   <property name="text">
+    <string>OpenBezier</string>
+   </property>
+  </action>
+  <action name="actionOpenBezier1">
+   <property name="text">
+    <string>OpenBezier1</string>
+   </property>
+  </action>
+  <action name="actionOpenBezier2">
+   <property name="text">
+    <string>OpenBezier2</string>
+   </property>
+  </action>
+  <action name="actionOpenBezierNew">
+   <property name="text">
+    <string>OpenBezierNew</string>
+   </property>
+  </action>
+  <action name="actionActionCalPDE1">
+   <property name="text">
+    <string>actionCalPDE1</string>
+   </property>
+  </action>
+  <action name="actionVervexNum">
+   <property name="text">
+    <string>VervexNum</string>
+   </property>
+  </action>
+  <action name="actionReadXJ">
+   <property name="text">
+    <string>ReadXJ</string>
+   </property>
+  </action>
+  <action name="actionALL_LINES1">
+   <property name="text">
+    <string>ALL_LINES1</string>
+   </property>
+  </action>
+  <action name="actionReadMSH">
+   <property name="text">
+    <string>ReadMSH</string>
+   </property>
+  </action>
+  <action name="actionPICKFACE">
+   <property name="text">
+    <string>PICKFACE</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QGLViewerWidget</class>
+   <extends>QWidget</extends>
+   <header>QGLViewerWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CuttingWidget</class>
+   <extends>QWidget</extends>
+   <header>CuttingWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="HexMeshViewer.qrc"/>
+ </resources>
+ <connections/>
+</ui>

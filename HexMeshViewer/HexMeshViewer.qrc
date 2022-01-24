@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/HexMeshViewer">
+        <file>Images/all_lines.ico</file>
+        <file>Images/all_lines.png</file>
+        <file>Images/all_poly.ico</file>
+        <file>Images/all_poly.png</file>
+        <file>Images/ClearMesh.png</file>
+        <file>Images/flat.png</file>
+        <file>Images/flatlines.png</file>
+        <file>Images/Mesh.ico</file>
+        <file>Images/move_vertex.png</file>
+        <file>Images/Open.ico</file>
+        <file>Images/Open.png</file>
+        <file>Images/points.png</file>
+        <file>Images/Save.ico</file>
+        <file>Images/Save.png</file>
+        <file>Images/saveScreen.png</file>
+        <file>Images/select_cell.ico</file>
+        <file>Images/select_cell.png</file>
+        <file>Images/select_edge.ico</file>
+        <file>Images/select_edge.png</file>
+        <file>Images/Select_Face.ico</file>
+        <file>Images/select_face.png</file>
+        <file>Images/select_line.png</file>
+        <file>Images/select_point.png</file>
+        <file>Images/select_sheet.ico</file>
+        <file>Images/select_sheet.png</file>
+        <file>Images/select_vertex.ico</file>
+        <file>Images/select_vertex.png</file>
+        <file>Images/select_volume.ico</file>
+        <file>Images/select_volume.png</file>
+        <file>Images/singularity.png</file>
+        <file>Images/texture_3D.png</file>
+        <file>Images/volume_mesh.png</file>
+        <file>Images/wire.png</file>
+    </qresource>
+</RCC>

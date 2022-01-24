@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lee\Desktop\code\1TopTopic\leeTopic\OpenVolumeMesh\build\CMakeFiles\0096a6ccfedc0f02e13f66bfbc1d7a46\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BF2E3723-655B-3430-99D1-A145235D67AF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

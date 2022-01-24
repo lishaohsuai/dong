@@ -1,0 +1,637 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{a5419391-4210-4223-9252-b7179e11e80c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\colorramp">
+      <UniqueIdentifier>{ff54d824-58f5-44ba-8495-9178e3d6f7a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PDE">
+      <UniqueIdentifier>{43043bb6-6c3d-412b-9658-4942d341102d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wm4">
+      <UniqueIdentifier>{b0c07f87-dee0-4630-b202-093cc830c985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lee">
+      <UniqueIdentifier>{f1367fc0-8ef0-42a2-aa5b-7e57c2df5bfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\subdivision">
+      <UniqueIdentifier>{eae291cd-2c61-40a8-b0a8-a9111c6ef636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BMesh">
+      <UniqueIdentifier>{ce692988-96bd-4764-ac74-dbf5c299238e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PIA">
+      <UniqueIdentifier>{2df8b115-f8bd-45d7-9ec3-d7d8543e5fbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\skelsimple">
+      <UniqueIdentifier>{ff67578a-7f5f-4b9b-a15e-9429b5a3f0bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\project">
+      <UniqueIdentifier>{c5c5f0f1-2db4-4d2b-9512-8fe65dfb73c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shrink">
+      <UniqueIdentifier>{9d522db3-6552-4e7d-9c05-5ed2b58e1cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Json">
+      <UniqueIdentifier>{7c5b413a-ef95-4353-bef6-855672af3a88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HexMeshViewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HexMeshViewer.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HexMeshViewer.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_HexMeshViewer.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryKernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SingularObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Subdivision.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QGLViewerWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QGLViewerWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QGLViewerWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Meshdraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CuttingWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CuttingWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CuttingWidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4bsplinebasis.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4bsplinecurve2.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4bsplinecurve3.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4bsplinerectangle.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4curve2.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4curve3.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\Wm4FoundationPCH.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4integrate1.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\Wm4Math.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\Wm4Matrix2.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\Wm4Memory.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4meshcurvature.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4nurbscurve2.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4nurbscurve3.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4nurbsrectangle.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4parametricsurface.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4singlecurve2.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4singlecurve3.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4surface.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\Wm4System.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\Wm4Vector2.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\Wm4Vector3.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometricTools\wm4vector4.cpp">
+      <Filter>wm4</Filter>
+    </ClCompile>
+    <ClCompile Include="BezierSolid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\colorramp\colorramp.cpp">
+      <Filter>ThirdParty\colorramp</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\colorramp\HSVcolormap.cpp">
+      <Filter>ThirdParty\colorramp</Filter>
+    </ClCompile>
+    <ClCompile Include="BSplineSolid.cpp">
+      <Filter>PDE</Filter>
+    </ClCompile>
+    <ClCompile Include="FunctionBSpline.h">
+      <Filter>PDE</Filter>
+    </ClCompile>
+    <ClCompile Include="FunctionBSpline.cpp">
+      <Filter>PDE</Filter>
+    </ClCompile>
+    <ClCompile Include="Subdivision_supplement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mlca_subdivision.cpp">
+      <Filter>Source Files\subdivision</Filter>
+    </ClCompile>
+    <ClCompile Include="solutionSubDiv.cpp">
+      <Filter>Lee</Filter>
+    </ClCompile>
+    <ClCompile Include="solutionTest.cpp">
+      <Filter>Lee</Filter>
+    </ClCompile>
+    <ClCompile Include="solutionSkel.cpp">
+      <Filter>Lee</Filter>
+    </ClCompile>
+    <ClCompile Include="singalFather.cpp">
+      <Filter>Lee</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_singalFather.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_singalFather.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_solutionSkel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_solutionSkel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\bmesh_solution.cc">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\common.cc">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\face.cc">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\geometry.cc">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\hex.cc">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\line.cc">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\local_vector.cc">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\node.cc">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\point.cc">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\point2d.cc">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="PIA.cpp">
+      <Filter>Source Files\PIA</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\quat.cpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>Lee</Filter>
+    </ClCompile>
+    <ClCompile Include="shrink.cc">
+      <Filter>Source Files\shrink</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_reader.cpp">
+      <Filter>Json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_value.cpp">
+      <Filter>Json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_writer.cpp">
+      <Filter>Json</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\rmf.cpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\interpolationCurve.cpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\simpleWithCgal.cpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\project.cpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\fixFlip.cpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\main.cc">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\rays.cc">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\test.cc">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\triangle.cc">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="BMesh\triangleMesh.cc">
+      <Filter>Source Files\BMesh</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="HexMeshViewer.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HexMeshViewer.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HexMeshViewer.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QGLViewerWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CuttingWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="singalFather.h">
+      <Filter>Lee</Filter>
+    </CustomBuild>
+    <CustomBuild Include="solutionSkel.h">
+      <Filter>Lee</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BMesh\rmf.h">
+      <Filter>Source Files\BMesh</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_HexMeshViewer.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HexTopologyKernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SingularObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Subdivision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4bsplinebasis.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4bsplinecurve2.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4bsplinecurve3.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4bsplinerectangle.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4curve2.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4curve3.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\Wm4FoundationLIB.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\Wm4FoundationPCH.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4gvector.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4integrate1.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\Wm4Math.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\Wm4MathMCR.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\Wm4Matrix2.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4matrix3.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4matrix4.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\Wm4Memory.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4meshcurvature.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4nurbscurve2.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4nurbscurve3.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4nurbsrectangle.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4parametricsurface.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4plane3.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\Wm4Platforms.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4singlecurve2.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4singlecurve3.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4surface.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\Wm4System.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\Wm4Vector2.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\Wm4Vector3.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometricTools\wm4vector4.h">
+      <Filter>wm4</Filter>
+    </ClInclude>
+    <ClInclude Include="BezierSolid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\matrix.h">
+      <Filter>ThirdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\matrix_h.h">
+      <Filter>ThirdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\colorramp\colorramp.h">
+      <Filter>ThirdParty\colorramp</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\colorramp\HSVcolormap.h">
+      <Filter>ThirdParty\colorramp</Filter>
+    </ClInclude>
+    <ClInclude Include="BSplineSolid.h">
+      <Filter>PDE</Filter>
+    </ClInclude>
+    <ClInclude Include="Transformation.h">
+      <Filter>PDE</Filter>
+    </ClInclude>
+    <ClInclude Include="meshDefs.h">
+      <Filter>Lee</Filter>
+    </ClInclude>
+    <ClInclude Include="mlca_subdivision.h">
+      <Filter>Source Files\subdivision</Filter>
+    </ClInclude>
+    <ClInclude Include="solutionSubDiv.h">
+      <Filter>Lee</Filter>
+    </ClInclude>
+    <ClInclude Include="solutionTest.h">
+      <Filter>Lee</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\bmesh_solution.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\common.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\face.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\geometry.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\hex.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\line.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\local_vector.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\node.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\point.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\point2d.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\debug.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryKernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PIA.h">
+      <Filter>Source Files\PIA</Filter>
+    </ClInclude>
+    <ClInclude Include="skelSimple.h">
+      <Filter>Source Files\skelsimple</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\quat.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Lee</Filter>
+    </ClInclude>
+    <ClInclude Include="shrink.hpp">
+      <Filter>Source Files\shrink</Filter>
+    </ClInclude>
+    <ClInclude Include="json\allocator.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\assertions.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\autolink.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\config.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\features.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\forwards.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json_tool.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\reader.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\value.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\version.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\writer.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\frame.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\interpolationCurve.h">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\simpleWithCgal.h">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\fixFlip.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\project.h">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\rays.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\test.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\triangle.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="BMesh\triangleMesh.hpp">
+      <Filter>Source Files\BMesh</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HexMeshViewer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Images\Mesh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="json\json_valueiterator.inl">
+      <Filter>Json</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="BMesh\waitTodel.txt">
+      <Filter>Source Files\BMesh</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
